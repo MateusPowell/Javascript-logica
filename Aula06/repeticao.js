@@ -98,6 +98,10 @@ console.log("=== Repetição ===")
 //          *
 let esp = 0
 let lin = prompt("quantas linhas?:")
+if (lin >= 40) {
+    lin = 40;
+    document.write("maximo 40 linhas<br>");
+}
 let fim = lin-1
 let pir = fim+fim-1
 for (let index = 0; index < lin; index++) {
